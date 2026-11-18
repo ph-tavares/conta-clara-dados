@@ -1,0 +1,18 @@
+services:
+  airflow:
+    image: ${AIRFLOW_IMAGE:-apache/airflow:3.2.0}
+    command: standalone
+    user: "${AIRFLOW_UID:-50000}:0"
+    ports:
+      - "127.0.0.1:8080:8080"
+    environment:
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__CORE__DEFAULT_TIMEZONE: America/Sao_Paulo
+      AIRFLOW__CORE__SIMPLE_AUTH_MANAGER_ALL_ADMINS: "true"
+      CHEGADA_DIR: /opt/airflow/chegada
+      AMOSTRAS_DIR: /opt/airflow/amostras
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./chegada:/opt/airflow/chegada
+      - ./amostras:/opt/airflow/amostras
+    restart: unless-stopped

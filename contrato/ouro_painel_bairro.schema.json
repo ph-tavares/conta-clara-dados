@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Painel por bairro (Ouro -> MVP)",
+  "description": "Exportado por databricks/05_exportar_para_mvp.py a partir de workspace.conta_clara.ouro_painel_bairro e servido pelo MVP em GET /api/dados/painel. Agregado por bairro, sem dado pessoal.",
+  "type": "object",
+  "required": ["tabela_origem", "gerado_em", "data_referencia", "demonstracao", "referencia_tarifaria", "fontes", "bairros"],
+  "properties": {
+    "tabela_origem": { "const": "workspace.conta_clara.ouro_painel_bairro" },
+    "gerado_em": { "type": "string", "description": "Momento da exportação, UTC, ISO 8601" },
+    "data_referencia": { "type": "string", "description": "Dia da leitura mais recente (AAAA-MM-DD)" },
+    "demonstracao": { "type": "boolean", "description": "true enquanto as leituras forem sintéticas" },
+    "referencia_tarifaria": {
+      "type": "object",
+      "required": ["distribuidora", "resolucao", "inicio_vigencia", "tarifa_residencial_rs_kwh", "tarifa_baixa_renda_rs_kwh", "bandeira", "adicional_bandeira_rs_kwh"],
+      "properties": {
+        "distribuidora": { "type": "string" },
+        "resolucao": { "type": "string", "description": "Resolução homologatória da ANEEL" },
+        "inicio_vigencia": { "type": "string" },
+        "tarifa_residencial_rs_kwh": { "type": "number", "description": "TUSD + TE, sem impostos" },
+        "tarifa_baixa_renda_rs_kwh": { "type": "number" },
+        "bandeira": { "type": "string", "description": "Bandeira acionada no mês (ANEEL)" },
+        "adicional_bandeira_rs_kwh": { "type": "number" }
+      }
+    },
+    "fontes": { "type": "array", "items": { "type": "string" } },
+    "bairros": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["bairro", "familias", "familias_tarifa_social", "leituras", "consumo_medio_diario_kwh",
+                     "conta_media_estimada_30d_rs", "familias_consumo_acima_do_habitual", "contas_informadas",
+                     "contas_conferidas", "contas_divergentes", "contas_por_media", "kwh_cobrados_a_mais", "valor_a_contestar_rs"],
+        "properties": {
+          "bairro": { "type": "string" },
+          "familias": { "type": "integer", "minimum": 0 },
+          "familias_tarifa_social": { "type": "integer", "minimum": 0 },
+          "leituras": { "type": "integer", "minimum": 0 },
+          "consumo_medio_diario_kwh": { "type": ["number", "null"] },
+          "conta_media_estimada_30d_rs": { "type": ["number", "null"], "description": "Sem impostos: tarifa Residencial + bandeira" },
+          "familias_consumo_acima_do_habitual": { "type": "integer", "minimum": 0, "description": "Última leitura 30% ou mais acima do consumo típico da família" },
+          "contas_informadas": { "type": "integer", "minimum": 0 },
+          "contas_conferidas": { "type": "integer", "minimum": 0, "description": "Contas de famílias com leituras suficientes para comparar" },
+          "contas_divergentes": { "type": "integer", "minimum": 0, "description": "Diferença acima de 15% entre cobrado e medido" },
+          "contas_por_media": { "type": "integer", "minimum": 0 },
+          "kwh_cobrados_a_mais": { "type": "number", "minimum": 0 },
+          "valor_a_contestar_rs": { "type": "number", "minimum": 0 }
+        }
+      }
+    }
+  }
+}

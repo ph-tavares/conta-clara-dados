@@ -1,0 +1,5 @@
+{
+  "ntfy_topic_secret": "https://ntfy.sh/seu-topico",
+  "open_meteo_url": "https://api.open-meteo.com/v1/forecast",
+  "aneel_api_url": "https://dadosabertos.aneel.gov.br/api/3/action"
+}

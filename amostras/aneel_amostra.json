@@ -1,0 +1,142 @@
+{
+  "dia_referencia": "2026-11-16",
+  "distribuidora": "ELETROPAULO (Enel SP)",
+  "cnpj": "61695227000193",
+  "tarifas": [
+    {
+      "_id": 289550,
+      "DatGeracaoConjuntoDados": "2026-11-17",
+      "DscREH": "RESOLUÇÃO HOMOLOGATÓRIA Nº 3.596, DE 3 DE JULHO DE 2026",
+      "SigAgente": "ELETROPAULO",
+      "NumCNPJDistribuidora": "61695227000193",
+      "DatInicioVigencia": "2026-07-04",
+      "DatFimVigencia": "2027-07-03",
+      "DscBaseTarifaria": "Tarifa de Aplicação",
+      "DscSubGrupo": "B1",
+      "DscModalidadeTarifaria": "Convencional",
+      "DscClasse": "Residencial",
+      "DscSubClasse": "Residencial Tarifa Social – faixa 01",
+      "DscDetalhe": "Não se aplica",
+      "NomPostoTarifario": "Não se aplica",
+      "DscUnidadeTerciaria": "MWh",
+      "SigAgenteAcessante": "Não se aplica",
+      "VlrTUSD": "306,31",
+      "VlrTE": "305,60"
+    },
+    {
+      "_id": 289554,
+      "DatGeracaoConjuntoDados": "2026-11-17",
+      "DscREH": "RESOLUÇÃO HOMOLOGATÓRIA Nº 3.596, DE 3 DE JULHO DE 2026",
+      "SigAgente": "ELETROPAULO",
+      "NumCNPJDistribuidora": "61695227000193",
+      "DatInicioVigencia": "2026-07-04",
+      "DatFimVigencia": "2027-07-03",
+      "DscBaseTarifaria": "Tarifa de Aplicação",
+      "DscSubGrupo": "B1",
+      "DscModalidadeTarifaria": "Convencional",
+      "DscClasse": "Residencial",
+      "DscSubClasse": "Residencial Tarifa Social – faixa 01",
+      "DscDetalhe": "SCEE",
+      "NomPostoTarifario": "Não se aplica",
+      "DscUnidadeTerciaria": "MWh",
+      "SigAgenteAcessante": "Não se aplica",
+      "VlrTUSD": "306,31",
+      "VlrTE": "37,19"
+    },
+    {
+      "_id": 289558,
+      "DatGeracaoConjuntoDados": "2026-11-17",
+      "DscREH": "RESOLUÇÃO HOMOLOGATÓRIA Nº 3.596, DE 3 DE JULHO DE 2026",
+      "SigAgente": "ELETROPAULO",
+      "NumCNPJDistribuidora": "61695227000193",
+      "DatInicioVigencia": "2026-07-04",
+      "DatFimVigencia": "2027-07-03",
+      "DscBaseTarifaria": "Tarifa de Aplicação",
+      "DscSubGrupo": "B1",
+      "DscModalidadeTarifaria": "Convencional",
+      "DscClasse": "Residencial",
+      "DscSubClasse": "Residencial Tarifa Social – faixa 02",
+      "DscDetalhe": "Não se aplica",
+      "NomPostoTarifario": "Não se aplica",
+      "DscUnidadeTerciaria": "MWh",
+      "SigAgenteAcessante": "Não se aplica",
+      "VlrTUSD": "306,31",
+      "VlrTE": "305,60"
+    },
+    {
+      "_id": 289561,
+      "DatGeracaoConjuntoDados": "2026-11-17",
+      "DscREH": "RESOLUÇÃO HOMOLOGATÓRIA Nº 3.596, DE 3 DE JULHO DE 2026",
+      "SigAgente": "ELETROPAULO",
+      "NumCNPJDistribuidora": "61695227000193",
+      "DatInicioVigencia": "2026-07-04",
+      "DatFimVigencia": "2027-07-03",
+      "DscBaseTarifaria": "Tarifa de Aplicação",
+      "DscSubGrupo": "B1",
+      "DscModalidadeTarifaria": "Convencional",
+      "DscClasse": "Residencial",
+      "DscSubClasse": "Residencial Tarifa Social – faixa 02",
+      "DscDetalhe": "SCEE",
+      "NomPostoTarifario": "Não se aplica",
+      "DscUnidadeTerciaria": "MWh",
+      "SigAgenteAcessante": "Não se aplica",
+      "VlrTUSD": "306,31",
+      "VlrTE": "37,19"
+    },
+    {
+      "_id": 289503,
+      "DatGeracaoConjuntoDados": "2026-11-17",
+      "DscREH": "RESOLUÇÃO HOMOLOGATÓRIA Nº 3.596, DE 3 DE JULHO DE 2026",
+      "SigAgente": "ELETROPAULO",
+      "NumCNPJDistribuidora": "61695227000193",
+      "DatInicioVigencia": "2026-07-04",
+      "DatFimVigencia": "2027-07-03",
+      "DscBaseTarifaria": "Tarifa de Aplicação",
+      "DscSubGrupo": "B1",
+      "DscModalidadeTarifaria": "Convencional",
+      "DscClasse": "Residencial",
+      "DscSubClasse": "Baixa Renda",
+      "DscDetalhe": "Não se aplica",
+      "NomPostoTarifario": "Não se aplica",
+      "DscUnidadeTerciaria": "MWh",
+      "SigAgenteAcessante": "Não se aplica",
+      "VlrTUSD": "306,31",
+      "VlrTE": "316,78"
+    }
+  ],
+  "bandeira_acionamento": [
+    {
+      "_id": 143,
+      "DatGeracaoConjuntoDados": "2026-11-16",
+      "DatCompetencia": "2026-11-01",
+      "NomBandeiraAcionada": "Verde",
+      "VlrAdicionalBandeira": ",00"
+    }
+  ],
+  "bandeira_adicional": [
+    {
+      "_id": 25,
+      "DatGeracaoConjuntoDados": "2026-07-15",
+      "DscResolucao": "REH nº 3.306/2024",
+      "DatVigencia": "2024-04-01",
+      "NomBandeiraAcionada": "Amarela",
+      "VlrAdicionalBandeiraRSMWh": "18,85"
+    },
+    {
+      "_id": 26,
+      "DatGeracaoConjuntoDados": "2026-07-15",
+      "DscResolucao": "REH nº 3.306/2024",
+      "DatVigencia": "2024-04-01",
+      "NomBandeiraAcionada": "Vermelha P1",
+      "VlrAdicionalBandeiraRSMWh": "44,63"
+    },
+    {
+      "_id": 27,
+      "DatGeracaoConjuntoDados": "2026-07-15",
+      "DscResolucao": "REH nº 3.306/2024",
+      "DatVigencia": "2024-04-01",
+      "NomBandeiraAcionada": "Vermelha P2",
+      "VlrAdicionalBandeiraRSMWh": "78,77"
+    }
+  ]
+}

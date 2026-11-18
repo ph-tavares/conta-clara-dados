@@ -1,0 +1,10 @@
+chegada/*
+!chegada/.gitkeep
+
+.env
+variables.json
+*.secret
+
+__pycache__/
+*.pyc
+logs/

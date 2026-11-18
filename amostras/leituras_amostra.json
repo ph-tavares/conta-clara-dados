@@ -1,0 +1,85 @@
+{
+  "dia_referencia": "2026-11-16",
+  "origem": "sintetico",
+  "aviso": "Dados de DEMONSTRACAO: familias, leituras e contas ficticias",
+  "familias": [],
+  "leituras": [
+    {
+      "id_familia": "demo-002",
+      "data_leitura": "2026-11-16",
+      "kwh_medidor": 16273,
+      "origem_leitura": "foto",
+      "confianca": 0.97,
+      "confirmada_pelo_cidadao": true,
+      "correcao": false
+    },
+    {
+      "id_familia": "demo-003",
+      "data_leitura": "2026-11-16",
+      "kwh_medidor": 47624,
+      "origem_leitura": "digitada",
+      "confianca": null,
+      "confirmada_pelo_cidadao": true,
+      "correcao": false
+    },
+    {
+      "id_familia": "demo-005",
+      "data_leitura": "2026-11-16",
+      "kwh_medidor": 14687,
+      "origem_leitura": "foto",
+      "confianca": 0.72,
+      "confirmada_pelo_cidadao": true,
+      "correcao": false
+    },
+    {
+      "id_familia": "demo-006",
+      "data_leitura": "2026-11-16",
+      "kwh_medidor": 24342,
+      "origem_leitura": "digitada",
+      "confianca": null,
+      "confirmada_pelo_cidadao": true,
+      "correcao": false
+    },
+    {
+      "id_familia": "demo-008",
+      "data_leitura": "2026-11-16",
+      "kwh_medidor": 14097,
+      "origem_leitura": "foto",
+      "confianca": 0.77,
+      "confirmada_pelo_cidadao": true,
+      "correcao": false
+    }
+  ],
+  "contas": [
+    {
+      "id_conta": "demo-011-202611",
+      "id_familia": "demo-011",
+      "competencia": "2026-11",
+      "data_leitura_distribuidora": "2026-11-16",
+      "dias_faturados": 30,
+      "kwh_cobrado": 167,
+      "valor_cobrado": 155.31,
+      "tipo_faturamento": "leitura"
+    },
+    {
+      "id_conta": "demo-019-202611",
+      "id_familia": "demo-019",
+      "competencia": "2026-11",
+      "data_leitura_distribuidora": "2026-11-16",
+      "dias_faturados": 32,
+      "kwh_cobrado": 278,
+      "valor_cobrado": 258.54,
+      "tipo_faturamento": "media"
+    },
+    {
+      "id_conta": "demo-040-202611",
+      "id_familia": "demo-040",
+      "competencia": "2026-11",
+      "data_leitura_distribuidora": "2026-11-16",
+      "dias_faturados": 30,
+      "kwh_cobrado": 397,
+      "valor_cobrado": 369.21,
+      "tipo_faturamento": "leitura"
+    }
+  ]
+}
